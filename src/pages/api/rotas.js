@@ -4,6 +4,7 @@ export default async (req, res) => {
   try {
     const data = req.body
     const data2 = req.body
+
     const prisma = new PrismaClient()
 
     const newTodo = await prisma.todo.create({
