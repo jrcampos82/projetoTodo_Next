@@ -1,9 +1,9 @@
 import { PrismaClient } from '@prisma/client'
+import type { NextApiResponse, NextApiRequest } from 'next'
 
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const data = req.body
-    const data2 = req.body
 
     const prisma = new PrismaClient()
 
